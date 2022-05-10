@@ -1,3 +1,9 @@
+input.onButtonPressed(Button.A, function () {
+    pins.digitalWritePin(DigitalPin.P2, 1)
+})
+input.onButtonPressed(Button.B, function () {
+    pins.digitalWritePin(DigitalPin.P2, 0)
+})
 basic.showIcon(IconNames.Happy)
 pins.digitalWritePin(DigitalPin.P2, 0)
 pins.servoWritePin(AnalogPin.P0, 30)
